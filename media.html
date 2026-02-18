@@ -6,7 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="logo.png" type="image/x-icon">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Source+Serif+4&display=swap" rel="stylesheet">
+
 <style>
+
 /* ===== Global Styles ===== */
 html {
     scroll-behavior: smooth;
@@ -128,7 +130,7 @@ nav a {
     box-shadow: 0 10px 35px rgba(0,0,0,0.07);
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* aligns image and text nicely */
+    justify-content: flex-start;
     gap: 40px;
     padding: 40px;
     flex-wrap: wrap;
@@ -141,9 +143,9 @@ nav a {
 
 .media-card img {
     width: 200px;
-    height: 200px;        /* square images */
+    height: 200px;
     border-radius: 10px;
-    object-fit: cover;     /* maintain aspect ratio and fill square */
+    object-fit: cover;
     flex-shrink: 0;
 }
 
@@ -163,7 +165,7 @@ nav a {
     font-size: 16px;
 }
 
-/* ===== Media Buttons ===== */
+/* ===== Buttons ===== */
 .media-btn {
     display: inline-block;
     padding: 13px 32px;
@@ -206,8 +208,8 @@ nav a {
     color: #f06a9b;
 }
 
-/* ===== Scroll Offset ===== */
-#beats, #movies, #shows {
+/* ===== Scroll Offset Fix ===== */
+#beats, #movies, #shows, #dreamplaces {
     scroll-margin-top: 120px;
 }
 
@@ -227,8 +229,10 @@ footer {
     .media-card { flex-direction: column; text-align: center; gap: 30px; padding: 40px 20px; }
     .media-card img { width: 180px; height: 180px; }
 }
+
 </style>
 </head>
+
 <body id="top">
 
 <header>
@@ -253,13 +257,15 @@ footer {
     <div class="media-nav">
         <a href="#beats">My Beats</a> |
         <a href="#movies">My Film Movies</a> |
-        <a href="#shows">My Film TV Shows</a>
+        <a href="#shows">My Film TV Shows</a> |
+        <a href="#dreamplaces">My Dream Places</a>
     </div>
 </section>
 
+<!-- BEATS -->
 <section class="media-section" id="beats">
     <div class="media-card">
-        <img src="IMAGES/MEDIA/beats.jpg" alt="Music Icon" title="This is an image of a laptop playing a Spotify Playlist.">
+        <img src="IMAGES/MEDIA/beats.jpg" alt="Music Icon">
         <div class="media-text">
             <h2>My Beats</h2>
             <p>A chill playlist sprinkled with emotion and creativity — the soundtrack to my daily life.</p>
@@ -271,9 +277,10 @@ footer {
     </div>
 </section>
 
+<!-- MOVIES -->
 <section class="media-section" id="movies">
     <div class="media-card">
-        <img src="IMAGES/MEDIA/tvfilm.jpg" alt="Movie Icon" title="This is an image of a projector playing Netflix.">
+        <img src="IMAGES/MEDIA/tvfilm.jpg" alt="Movie Icon">
         <div class="media-text">
             <h2>My Film Movies</h2>
             <p>Cinematic stories that stayed with me — scenes, lines, and moments I’ll never forget.</p>
@@ -285,13 +292,29 @@ footer {
     </div>
 </section>
 
+<!-- SHOWS -->
 <section class="media-section" id="shows">
     <div class="media-card">
-        <img src="IMAGES/MEDIA/tvshows.jpg" alt="TV Icon" title="This is an image of an ipad playing a TV Show.">
+        <img src="IMAGES/MEDIA/tvshows.jpg" alt="TV Icon">
         <div class="media-text">
             <h2>My Film TV Shows</h2>
             <p>From K-dramas to comfort series — stories I binge and rewatch endlessly.</p>
             <a href="filmshows.html" class="media-btn">Watch My Shows</a>
+        </div>
+    </div>
+    <div class="back-wrapper">
+        <a href="#top" class="back-top">Back to Top ↑</a>
+    </div>
+</section>
+
+<!-- DREAM PLACES -->
+<section class="media-section" id="dreamplaces">
+    <div class="media-card">
+        <img src="IMAGES/MEDIA/dreamplaces.jpg" alt="Travel Icon">
+        <div class="media-text">
+            <h2>My Dream Places</h2>
+            <p>Destinations I hope to visit someday — cities, beaches, and magical places on my bucket list.</p>
+            <a href="dreamplaces.html" class="media-btn">Explore My Dream Places</a>
         </div>
     </div>
     <div class="back-wrapper">
@@ -304,5 +327,4 @@ footer {
 </footer>
 
 </body>
-
 </html>
